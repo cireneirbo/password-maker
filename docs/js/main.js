@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //selects a random Ascii character
     function getRandomChar(max) {
-            return String.fromCharCode(Math.floor(Math.random() * Math.floor(max)));
+            return String.fromCharCode(Math.floor(Math.random() * Math.floor(max))+33);
           }
     
     //forms the new password

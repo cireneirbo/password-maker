@@ -5,20 +5,20 @@ body {
 }
 
 
-h5 {
-    padding-left: 5%;
-    color: white;    
+h5, input {
+    
+    color: black;    
 }
 
 
 
 label {
-    padding-left: 5%;
-    color: white;
+    
+    color: black;
 }
 
 #new-password {
-    padding-left: 5%;
+    
     color: black;
 }
 
@@ -27,13 +27,19 @@ fieldset {
     border: 5px solid rgb(0, 0, 0);
     background: #ddd;
     border-radius: 5px;
-    padding-left: 150px;
+    padding-left: 30%;
+    padding-right: 30%;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.75;
 }
 
 p {
     padding-left: 5%;
     font-family: sans-serif;
     color: black;
+}
+
+main {
+    padding-left: 30%;
+    padding-right: 30%;
 }

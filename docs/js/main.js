@@ -28,11 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
         105,106,107,108,109,110,
         111,112,113,114,115,116,117,
         118,119,120,121,122
-    ]
+    ];
+
+    //new way?
+    const characterArrayPlainText = [
+        A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,0,1,2,3,4,5,6,7,8,9
+    ];
 
     //selects a random Ascii character
     function getRandomChar(max) {
-            return String.fromCharCode(Math.floor(Math.random() * Math.floor(max)) + 33);
+            return String.fromCharCode(Math.floor(Math.random() * Math.floor(max)));
           }
     
     //forms the new password
@@ -53,16 +58,19 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         return password;
     }        
-    alert(document.getElementsByClassName('select-password-class').value);
+    
     //respond to make new-password user request
     const inputElement = document.getElementById('make-password');
     inputElement.addEventListener("click", function() {
+
         const lengthPasswordElement = document.getElementById('length-password');
-        const selectTypePasswordElement = document.getElementsByClassName('select-password-class');
-        const newPasswordElement = document.getElementById('new-password');
+        const selectTypePasswordElement = document.querySelector('input[name="engine"]:checked');
+
+        
         alert(selectTypePasswordElement.value);
         let newPassword = createNewPassword(lengthPasswordElement.value, selectTypePasswordElement.value);
-        
+
+        const newPasswordElement = document.getElementById('new-password');
         newPasswordElement.innerHTML += `
             <p>${newPassword}</p>
         `;

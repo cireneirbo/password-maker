@@ -30,17 +30,23 @@
 
     <main>
         
-        <label>Required password length: <input id="length-password" type="number" value="12"></label>
+        <fieldset>
+            <label>Required password length: <input id="length-password" type="number" value="12"></label>
 
-        <select id="select-password-type">
-            <option class="select-password-class" value="">* Select One *</option>
-            <option class="select-password-class" value="1">Only uppercase, lowercase, and numbers</option>
-            <option class="select-password-class" value="2">Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</option>
-            <option class="select-password-class" value="3">Uppercase, lowercase, numbers, and all unique characters</option>
-        </select>
+            <!-- <select id="select-password-type">
+                <option class="select-password-class" value="">* Select One *</option>
+                <option class="select-password-class" value="1">Only uppercase, lowercase, and numbers</option>
+                <option class="select-password-class" value="2">Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</option>
+                <option class="select-password-class" value="3">Uppercase, lowercase, numbers, and all unique characters</option>
+            </select> -->
 
-        <button id="make-password">Make a new password</button>
-
+            
+            <div><label><input type="radio" name="engine" value="1"/>Only uppercase, lowercase, and numbers</label></div>
+            <div><label><input type="radio" name="engine" value="2"/>Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</label></div>
+            <div><label><input type="radio" name="engine" value="3"/>Uppercase, lowercase, numbers, and all unique characters</label></div>
+            
+            <button id="make-password">Make a new password</button>
+        </fieldset>
 
 
         <fieldset id="new-password">

@@ -6,10 +6,10 @@
       <!-- Metadata -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A site that allows users to add the URL of their favorite music to a radio-style playlist.">
+    <meta name="description" content="A website that creates a strong password for the user based on several user inputs.">
     
 	<!-- Title -->
-    <title>URL_radio</title>
+    <title>Password Maker</title>
     
     <!-- Thumbnails -->
 	
@@ -23,56 +23,31 @@
 </head>
 
 <body>
-    <header>
-        <h5>Created by Eric O&apos;Brien</h5>
-    </header>
-
-
+    
     <main>
-        
+        <br><br>
         <fieldset>
             <label>Required password length: <input id="length-password" type="number" value="12"></label>
 
-            <!-- <select id="select-password-type">
-                <option class="select-password-class" value="">* Select One *</option>
-                <option class="select-password-class" value="1">Only uppercase, lowercase, and numbers</option>
-                <option class="select-password-class" value="2">Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</option>
-                <option class="select-password-class" value="3">Uppercase, lowercase, numbers, and all unique characters</option>
-            </select> -->
-
-            
-            <div><label><input type="radio" name="engine" value="1"/>Only uppercase, lowercase, and numbers</label></div>
-            <div><label><input type="radio" name="engine" value="2"/>Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</label></div>
-            <div><label><input type="radio" name="engine" value="3"/>Uppercase, lowercase, numbers, and all unique characters</label></div>
+            <div><label><input id="password-type" type="radio" name="engine" value="1"/>Lowercase and numbers</label></div>
+            <div><label><input id="password-type" type="radio" name="engine" value="2"/>Uppercase, lowercase, and numbers.</label></div>
+            <div><label><input id="password-type" type="radio" name="engine" value="3"/>Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</label></div>
             
             <button id="make-password">Make a new password</button>
         </fieldset>
-
-
-        <fieldset id="new-password">
-
+        <br>
+        <fieldset>
+            <p id="i-was-here">Created by Eric O&apos;Brien</p>
         </fieldset>
+        <br>
 
-        
-
-
-
-
-
-
-
-
-
+        <fieldset id="new-password"></fieldset>
+        <br><br>
 
     </main>
-
-
 
     <!-- scripts-->
     <script type="text/javascript" src="js/main.js"></script>
     
-    <footer>
-        
-    </footer>
 </body>
 </html>

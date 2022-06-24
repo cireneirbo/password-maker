@@ -1,53 +1,80 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-      
-      <!-- Metadata -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A website that creates a strong password for the user based on several user inputs.">
-    
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A website that creates a strong password for the user based on several user inputs."
+    />
+
     <!-- Title -->
     <title>Password Maker</title>
-    
+
     <!-- Thumbnails -->
-    <link rel="icon" type="image/ico" href="images/eric-as-a-favicon.ico"/>
+    <link rel="icon" type="image/ico" href="images/eric-as-a-favicon.ico" />
 
-	<!-- Libraries -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-	<!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- Libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<body>
-    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <main>
-        <br><br>
-        <fieldset>
-            <label>Required password length: <input id="length-password" type="number" value="12"></label>
-
-            <div><label><input id="password-type" type="radio" name="engine" value="1"/>Lowercase and numbers</label></div>
-            <div><label><input id="password-type" type="radio" name="engine" value="2"/>Uppercase, lowercase, and numbers.</label></div>
-            <div><label><input id="password-type" type="radio" name="engine" value="3"/>Uppercase, lowercase, numbers, and 10 common unique characters from number bar.</label></div>
-            
-            <button id="make-password">Make a new password</button>
+      <br /><br />
+      <fieldset class="outer-fieldset">
+        <label
+          >Required password length:
+          <input id="length-password" type="number" value="12"
+        /></label>
+        <fieldset id="inner-fieldset">
+          <div>
+            <label
+              ><input id="password-type" type="radio" name="engine" value="1" />
+              Lowercase and numbers</label
+            >
+          </div>
+          <div>
+            <label
+              ><input id="password-type" type="radio" name="engine" value="2" />
+              Uppercase, lowercase, and numbers.</label
+            >
+          </div>
+          <div>
+            <label
+              ><input id="password-type" type="radio" name="engine" value="3" />
+              Uppercase, lowercase, numbers, and 10 common unique characters
+              from number bar.</label
+            >
+          </div>
         </fieldset>
-        <br>
-        <fieldset>
-            <p id="i-was-here">Created by <a href="https://github.com/cireneirbo">Eric O&apos;Brien</a></p>
-        </fieldset>
-        <br>
+        <button id="make-password">Make a new password</button>
+      </fieldset>
+      <br />
+      <fieldset class="outer-fieldset">
+        <p id="i-was-here">
+          Created by
+          <a href="https://github.com/cireneirbo">Eric O&apos;Brien</a>
+        </p>
+      </fieldset>
+      <br />
 
-        <fieldset id="new-password"></fieldset>
-        <br><br>
-
+      <fieldset id="new-password" class="outer-fieldset"></fieldset>
+      <br /><br />
     </main>
 
     <!-- scripts-->
     <script type="text/javascript" src="js/main.js"></script>
-    
-</body>
+  </body>
 </html>

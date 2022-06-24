@@ -76,5 +76,6 @@ p {
   main {
     padding-left: 2%;
     padding-right: 2%;
+		min-width: 240px;
   }
 }
